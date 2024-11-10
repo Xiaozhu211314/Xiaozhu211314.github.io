@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+body{
+    background: #fff;
+}
+.img ul li img{
+    width: 10%;
+}
+.img ul li{
+    position: absolute;
+}
+.img ul li:nth-child(1){
+    top: 100px;
+}
+.img ul li:nth-child(2){
+    position: absolute;
+    top: 120px;
+    left: 30px;
+}
+.img ul li:nth-child(3){
+    position: absolute;
+    top: 140px;
+    left: 60px;
+    top: 20px;
+}
+.img ul li:nth-child(4){
+    position: absolute;
+    top: 160px;
+    left: 68px;
+    top: 70px;
+}
+.img ul li:nth-child(5){
+    position: absolute;
+    top: 180px;
+    left: 80px;
+    top: 100px;
+}
+
+

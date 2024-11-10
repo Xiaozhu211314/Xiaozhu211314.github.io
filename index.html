@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>我和小🐖</title>
+</head>
+<script>
+    function timingTime(){
+      let start = '2024-11-10 00:00:00'
+      let startTime = new Date(start).getTime()
+      let currentTime = new Date().getTime()
+      let difference = currentTime - startTime
+      let m =  Math.floor(difference / (1000))
+      let mm = m % 60  // 秒
+      let f = Math.floor(m / 60)
+      let ff = f % 60 // 分钟
+      let s = Math.floor(f/ 60) // 小时
+      let ss = s % 24
+      let day = Math.floor(s  / 24 ) // 天数
+      return day + "天" + ss + "时" + ff + "分" + mm +'秒'
+    }
+    setInterval(()=>{
+      document.getElementById('time').innerHTML = timingTime()
+    },1000)
+  </script>
+<body>
+    <p style="font-size: 11px;">我们相识了</p>
+    <span id="time" style="font-size: 7px;color: pink;margin-left: 2px;">
+    </span>
+    <div class="img">
+        <ul>
+            <li><img src="./images/1.jpg" alt="" srcset=""></li>
+            <li><img src="./images/2.jpg" alt="" srcset=""></li>
+            <li><img src="./images/3.jpg" alt="" srcset=""></li>
+            <li><img src="./images/4.jpg" alt="" srcset=""></li>
+            <li><img src="./images/5.jpg" alt="" srcset=""></li>
+        </ul>
+    </div>
+</body>
+<script src="./js/flower.js"></script>
+</body>
+
+</html>
